@@ -1,0 +1,425 @@
+
+Testing /mnt/c/Users/siwilkins/gitProjects/appsec_test/challenge_2:maven-dependency-test...
+
+✗ Low severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Cross-site Scripting (XSS)
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451458
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.2.0.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.2.0.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.2.0.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.15)
+
+✗ Medium severity vulnerability found in org.springframework:spring-webmvc
+  Description: Directory Traversal
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-30169
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework:spring-webmvc@4.0.5.RELEASE
+  Remediation:
+    Your dependencies are out of date, otherwise you would be using a newer version of org.springframework:spring-webmvc. 
+
+✗ Medium severity vulnerability found in org.springframework:spring-webmvc
+  Description: Multipart Content Pollution
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-32199
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework:spring-webmvc@4.0.5.RELEASE
+  Remediation:
+    Your dependencies are out of date, otherwise you would be using a newer version of org.springframework:spring-webmvc. 
+
+✗ Medium severity vulnerability found in org.springframework:spring-webmvc
+  Description: Directory Traversal
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-32202
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework:spring-webmvc@4.0.5.RELEASE
+  Remediation:
+    Your dependencies are out of date, otherwise you would be using a newer version of org.springframework:spring-webmvc. 
+
+✗ Medium severity vulnerability found in org.springframework:spring-web
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-30164
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework:spring-web@4.0.5.RELEASE
+  Remediation:
+    Your dependencies are out of date, otherwise you would be using a newer version of org.springframework:spring-web. 
+
+✗ Medium severity issue found in org.jboss.logging:jboss-logging
+  Description: LGPL-2.1 license
+  Info: https://snyk.io/vuln/snyk:lic:maven:org.jboss.logging:jboss-logging:LGPL-2.1
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.hibernate:hibernate-validator@5.0.3.Final > org.jboss.logging:jboss-logging@3.1.1.GA
+
+✗ Medium severity vulnerability found in org.hibernate:hibernate-validator
+  Description: JSM bypass via ReflectionHelper
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGHIBERNATE-30098
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.hibernate:hibernate-validator@5.0.3.Final
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.3.0.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.3.0.RELEASE)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-el
+  Description: Improper Access Control
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30991
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-el@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.1.11.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.1.11.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.11.RELEASE > org.apache.tomcat.embed:tomcat-embed-el@7.0.59)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Improper Access Control
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30983
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.1.11.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.1.11.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.11.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.59)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Directory Traversal
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30984
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.2.8.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.2.8.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.2.8.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.30)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30986
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.3.3.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.3.3.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.3.3.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.32)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Timing Attack
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30988
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.3.8.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.3.8.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.3.8.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.37)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Access Restriction Bypass
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30989
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.3.3.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.3.3.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.3.3.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.32)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Open Redirect
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451503
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.2.0.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.2.0.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.2.0.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.15)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Directory Traversal
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451510
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.5.11.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.5.11.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.5.11.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.29)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Access Restriction Bypass
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451511
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.5.11.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.5.11.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.5.11.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.29)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Directory Traversal
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451532
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.2.7.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.2.7.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.2.7.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.28)
+
+✗ Medium severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: HTTP Request Smuggling
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451533
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.1.6.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.1.6.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.6.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.55)
+
+✗ Medium severity vulnerability found in com.fasterxml.jackson.core:jackson-core
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-31519
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4 > com.fasterxml.jackson.core:jackson-core@2.7.9
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.8.6 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.8.6 > com.fasterxml.jackson.core:jackson-core@2.8.6)
+
+✗ Medium severity issue found in ch.qos.logback:logback-core
+  Description: Dual license: EPL-1.0, LGPL-2.0
+  Info: https://snyk.io/vuln/snyk:lic:maven:ch.qos.logback:logback-core:(EPL-1.0_OR_LGPL-2.0)
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-logging@1.1.1.RELEASE > ch.qos.logback:logback-classic@1.1.2 > ch.qos.logback:logback-core@1.1.2
+
+✗ Medium severity issue found in ch.qos.logback:logback-classic
+  Description: Dual license: EPL-1.0, LGPL-2.0
+  Info: https://snyk.io/vuln/snyk:lic:maven:ch.qos.logback:logback-classic:(EPL-1.0_OR_LGPL-2.0)
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-logging@1.1.1.RELEASE > ch.qos.logback:logback-classic@1.1.2
+
+✗ High severity vulnerability found in org.springframework:spring-webmvc
+  Description: Reflected File Download
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-30170
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework:spring-webmvc@4.0.5.RELEASE
+  Remediation:
+    Your dependencies are out of date, otherwise you would be using a newer version of org.springframework:spring-webmvc. 
+
+✗ High severity vulnerability found in org.springframework:spring-web
+  Description: Reflected File Download
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-30165
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework:spring-web@4.0.5.RELEASE
+  Remediation:
+    Your dependencies are out of date, otherwise you would be using a newer version of org.springframework:spring-web. 
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30982
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.1.6.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.1.6.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.6.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.55)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Information Disclosure
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30985
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.2.8.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.2.8.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.2.8.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.30)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Access Restriction Bypass
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30987
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.3.3.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.3.3.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.3.3.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.32)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Information Disclosure
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-31420
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.4.6.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.4.6.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.4.6.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.13)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Information Disclosure
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-31432
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.4.6.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.4.6.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.4.6.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.13)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Remote Code Execution
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451343
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.2.0.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.2.0.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.2.0.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.15)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Insecure Defaults
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451505
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.5.15.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.5.15.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.5.15.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.32)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451508
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.5.15.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.5.15.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.5.15.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.32)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Arbitrary Code Execution
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451515
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.5.8.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.5.8.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.5.8.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.23)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Access Restriction Bypass
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451519
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.4.7.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.4.7.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.4.7.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.15)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451521
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.4.4.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.4.4.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.4.4.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.11)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451526
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.4.4.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.4.4.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.4.4.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.5.11)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Access Restriction Bypass
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451527
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.3.8.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.3.8.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.3.8.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.37)
+
+✗ High severity vulnerability found in org.apache.tomcat.embed:tomcat-embed-core
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451531
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.1.1.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@7.0.54
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@1.3.6.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@1.3.6.RELEASE > org.springframework.boot:spring-boot-starter-tomcat@1.3.6.RELEASE > org.apache.tomcat.embed:tomcat-embed-core@8.0.36)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-174736
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.9.9 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.9.9)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-32043
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.8.11 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.8.11)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-32044
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.8.11 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.8.11)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-32111
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.8.11.1 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.8.11.1)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-450207
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.9.9.1 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.9.9.1)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-450917
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.9.9.1 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.9.9.1)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-455617
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.9.9.2 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.9.9.2)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72448
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.7.9.5 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.7.9.5)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72449
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.7.9.5 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.7.9.5)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72450
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.7.9.5 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.7.9.5)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72451
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.7.9.5 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.7.9.5)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72882
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.9.8 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.9.8)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72883
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.9.8 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.9.8)
+
+✗ High severity vulnerability found in com.fasterxml.jackson.core:jackson-databind
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72884
+  Introduced through: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  From: com.fasterxml.jackson.core:jackson-databind@2.7.9.4
+  Remediation: 
+    Upgrade direct dependency com.fasterxml.jackson.core:jackson-databind@2.7.9.4 to com.fasterxml.jackson.core:jackson-databind@2.9.8 (triggers upgrades to com.fasterxml.jackson.core:jackson-databind@2.9.8)
+
+✗ High severity vulnerability found in ch.qos.logback:logback-classic
+  Description: Deserialization of Untrusted Data
+  Info: https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-31407
+  Introduced through: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE
+  From: org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter@1.1.1.RELEASE > org.springframework.boot:spring-boot-starter-logging@1.1.1.RELEASE > ch.qos.logback:logback-classic@1.1.2
+  Remediation: 
+    Upgrade direct dependency org.springframework.boot:spring-boot-starter-web@1.1.1.RELEASE to org.springframework.boot:spring-boot-starter-web@2.0.0.RELEASE (triggers upgrades to org.springframework.boot:spring-boot-starter-web@2.0.0.RELEASE > org.springframework.boot:spring-boot-starter@2.0.0.RELEASE > org.springframework.boot:spring-boot-starter-logging@2.0.0.RELEASE > ch.qos.logback:logback-classic@1.2.3)
+
+
+
+
+Organisation:      overstock
+Package manager:   maven
+Target file:       pom.xml
+Open source:       no
+Project path:      /mnt/c/Users/siwilkins/gitProjects/appsec_test/challenge_2:maven-dependency-test
+Licenses:          enabled
+
+Tested 31 dependencies for known issues, found 52 issues, 52 vulnerable paths.
+
