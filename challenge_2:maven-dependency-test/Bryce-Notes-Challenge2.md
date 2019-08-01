@@ -9,7 +9,6 @@ The repo contains a maven manifest file and a file containing the results of a S
 The organization allows applications with medium severity vulnerabilities to be released however this project contains 31 vulnerabilties considered high severity so in it's current state is not accepted as a release candidate.
 Resolve the vulnerabilities through implementing changes to the pom file and once the image complies to the oranization's risk apetite, the challenge is complete.
 
-
 ## Bryce's Solution
 
 1. Vulnerabilities found with Spring-Bootstarter (spring-boot-starter-web) version 1.1.1.RELEASE. Modified dependency:
@@ -22,7 +21,8 @@ Resolve the vulnerabilities through implementing changes to the pom file and onc
 	</dependency>
 ```
 
-2. Vulnerability found with Jackson (jackson-databind) verison 2.7.9.4. Modified dependency: 
+2. Vulnerability found with Jackson (jackson-databind) verison 2.7.9.4. Modified dependency:
+
 ```
 	<dependency>
     	    <groupId>com.fasterxml.jackson.core</groupId>
@@ -30,9 +30,10 @@ Resolve the vulnerabilities through implementing changes to the pom file and onc
             <version>2.9.9.1</version>
 	</dependency>
 ```
+
 ## Additional Notes
 
-Also added mvn-dependency-check - https://jeremylong.github.io/DependencyCheck/dependency-check-maven/ to pom.xml to analyze dependencies and fail build on any vulnerabilites greater than or equal to 7. 
+Also added mvn-dependency-check - https://jeremylong.github.io/DependencyCheck/dependency-check-maven/ to pom.xml to analyze dependencies and fail build on any vulnerabilites greater than or equal to 7.
 
 ```
 <plugin>
@@ -50,6 +51,12 @@ Also added mvn-dependency-check - https://jeremylong.github.io/DependencyCheck/d
                   </execution>
               </executions>
             </plugin>
+```
+
+To run, enter command:
+
+```
+mvn verify
 ```
 
 Output from tool on unmodified pom.xml:
@@ -150,6 +157,3 @@ Output from modified pom.xml:
 ```
 
 ---
-
-
-
