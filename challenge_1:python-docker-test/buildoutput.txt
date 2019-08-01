@@ -1,0 +1,116 @@
+Sending build context to Docker daemon  9.728kB
+Step 1/8 : FROM alpine:3.10.1
+3.10.1: Pulling from library/alpine
+050382585609: Pulling fs layer
+050382585609: Verifying Checksum
+050382585609: Download complete
+050382585609: Pull complete
+Digest: sha256:6a92cd1fcdc8d8cdec60f33dda4db2cb1fcdcacf3410a8e05b3741f44a9b5998
+Status: Downloaded newer image for alpine:3.10.1
+ ---> b7b28af77ffe
+Step 2/8 : RUN apk add --no-cache libressl-dev musl-dev libffi-dev gcc g++ make libpcap-dev bash git
+ ---> Running in 79ffd9e87c9e
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
+(1/35) Installing ncurses-terminfo-base (6.1_p20190518-r0)
+(2/35) Installing ncurses-terminfo (6.1_p20190518-r0)
+(3/35) Installing ncurses-libs (6.1_p20190518-r0)
+(4/35) Installing readline (8.0.0-r0)
+(5/35) Installing bash (5.0.0-r0)
+Executing bash-5.0.0-r0.post-install
+(6/35) Installing libgcc (8.3.0-r0)
+(7/35) Installing libstdc++ (8.3.0-r0)
+(8/35) Installing binutils (2.32-r0)
+(9/35) Installing gmp (6.1.2-r1)
+(10/35) Installing isl (0.18-r0)
+(11/35) Installing libgomp (8.3.0-r0)
+(12/35) Installing libatomic (8.3.0-r0)
+(13/35) Installing mpfr3 (3.1.5-r1)
+(14/35) Installing mpc1 (1.1.0-r0)
+(15/35) Installing gcc (8.3.0-r0)
+(16/35) Installing musl-dev (1.1.22-r2)
+(17/35) Installing libc-dev (0.7.1-r0)
+(18/35) Installing g++ (8.3.0-r0)
+(19/35) Installing ca-certificates (20190108-r0)
+(20/35) Installing nghttp2-libs (1.38.0-r0)
+(21/35) Installing libcurl (7.65.1-r0)
+(22/35) Installing expat (2.2.7-r0)
+(23/35) Installing pcre2 (10.33-r0)
+(24/35) Installing git (2.22.0-r0)
+(25/35) Installing linux-headers (4.19.36-r0)
+(26/35) Installing libffi (3.2.1-r6)
+(27/35) Installing pkgconf (1.6.1-r1)
+(28/35) Installing libffi-dev (3.2.1-r6)
+(29/35) Installing libpcap (1.9.0-r1)
+(30/35) Installing libpcap-dev (1.9.0-r1)
+(31/35) Installing libressl2.7-libcrypto (2.7.5-r0)
+(32/35) Installing libressl2.7-libssl (2.7.5-r0)
+(33/35) Installing libressl2.7-libtls (2.7.5-r0)
+(34/35) Installing libressl-dev (2.7.5-r0)
+(35/35) Installing make (4.2.1-r2)
+Executing busybox-1.30.1-r2.trigger
+Executing ca-certificates-20190108-r0.trigger
+OK: 208 MiB in 49 packages
+Removing intermediate container 79ffd9e87c9e
+ ---> 22466731179c
+Step 3/8 : RUN apk add --no-cache python3
+ ---> Running in 26b2be1fa6b5
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
+(1/5) Installing libbz2 (1.0.6-r7)
+(2/5) Installing gdbm (1.13-r1)
+(3/5) Installing xz-libs (5.2.4-r0)
+(4/5) Installing sqlite-libs (3.28.0-r0)
+(5/5) Installing python3 (3.7.3-r0)
+Executing busybox-1.30.1-r2.trigger
+OK: 264 MiB in 54 packages
+Removing intermediate container 26b2be1fa6b5
+ ---> 31e7a77516ed
+Step 4/8 : COPY requirements.txt /app/hello_world/requirements.txt
+ ---> 20089a0290d3
+Step 5/8 : RUN pip3 install -r /app/hello_world/requirements.txt
+ ---> Running in 53f2785e4df5
+Collecting beautifulsoup4==4.7.1 (from -r /app/hello_world/requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/1d/5d/3260694a59df0ec52f8b4883f5d23b130bc237602a1411fa670eae12351e/beautifulsoup4-4.7.1-py3-none-any.whl (94kB)
+Collecting fastapi==0.10.2 (from -r /app/hello_world/requirements.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/2d/32/15075588541dda2c2a03a38fabd85ebf73110f61b027324ac0050937e473/fastapi-0.10.2-py3-none-any.whl (110kB)
+Collecting requests==2.22.0 (from -r /app/hello_world/requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/51/bd/23c926cd341ea6b7dd0b2a00aba99ae0f828be89d72b2190f27c11d4b7fb/requests-2.22.0-py2.py3-none-any.whl (57kB)
+Collecting email-validator==1.0.3 (from -r /app/hello_world/requirements.txt (line 4))
+  Downloading https://files.pythonhosted.org/packages/d9/0f/7e3815143e30959fd38d02f622c77912a465c153d854317b248d29d6d7bf/email_validator-1.0.3-py2.py3-none-any.whl
+Collecting soupsieve>=1.2 (from beautifulsoup4==4.7.1->-r /app/hello_world/requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/35/e3/25079e8911085ab76a6f2facae0771078260c930216ab0b0c44dc5c9bf31/soupsieve-1.9.2-py2.py3-none-any.whl
+Collecting pydantic<=0.21.0,>=0.17 (from fastapi==0.10.2->-r /app/hello_world/requirements.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/0c/34/26797d017fc20907186cba125b1f1e5ea2c1dc2b4326399c8242844f18bf/pydantic-0.21-py36.py37.py38-none-any.whl (46kB)
+Collecting starlette==0.11.1 (from fastapi==0.10.2->-r /app/hello_world/requirements.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/95/9e/3d2b7ed91e823f4e1bc31b841a82660f2527d1095cf0d6b37d9248b6c00a/starlette-0.11.1.tar.gz (43kB)
+Collecting idna<2.9,>=2.5 (from requests==2.22.0->-r /app/hello_world/requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/14/2c/cd551d81dbe15200be1cf41cd03869a46fe7226e7450af7a6545bfc474c9/idna-2.8-py2.py3-none-any.whl (58kB)
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests==2.22.0->-r /app/hello_world/requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/e6/60/247f23a7121ae632d62811ba7f273d0e58972d75e58a94d329d51550a47d/urllib3-1.25.3-py2.py3-none-any.whl (150kB)
+Collecting chardet<3.1.0,>=3.0.2 (from requests==2.22.0->-r /app/hello_world/requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+Collecting certifi>=2017.4.17 (from requests==2.22.0->-r /app/hello_world/requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/69/1b/b853c7a9d4f6a6d00749e94eb6f3a041e342a885b87340b79c1ef73e3a78/certifi-2019.6.16-py2.py3-none-any.whl (157kB)
+Collecting dnspython>=1.15.0 (from email-validator==1.0.3->-r /app/hello_world/requirements.txt (line 4))
+  Downloading https://files.pythonhosted.org/packages/ec/d3/3aa0e7213ef72b8585747aa0e271a9523e713813b9a20177ebe1e939deb0/dnspython-1.16.0-py2.py3-none-any.whl (188kB)
+Installing collected packages: soupsieve, beautifulsoup4, pydantic, starlette, fastapi, idna, urllib3, chardet, certifi, requests, dnspython, email-validator
+  Running setup.py install for starlette: started
+    Running setup.py install for starlette: finished with status 'done'
+Successfully installed beautifulsoup4-4.7.1 certifi-2019.6.16 chardet-3.0.4 dnspython-1.16.0 email-validator-1.0.3 fastapi-0.10.2 idna-2.8 pydantic-0.21 requests-2.22.0 soupsieve-1.9.2 starlette-0.11.1 urllib3-1.25.3
+[91mYou are using pip version 19.0.3, however version 19.2.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+[0mRemoving intermediate container 53f2785e4df5
+ ---> 0e381f4cd13f
+Step 6/8 : WORKDIR /app/hello_world
+ ---> Running in e4a63533afb0
+Removing intermediate container e4a63533afb0
+ ---> 2493c5ae3dcd
+Step 7/8 : COPY hello_world.py /app/hello_world
+ ---> ae594064dd5a
+Step 8/8 : CMD ["python3","-u","./hello_world.py"]
+ ---> Running in 897316ee044a
+Removing intermediate container 897316ee044a
+ ---> 6cea31942646
+Successfully built 6cea31942646
+Successfully tagged challenge1:latest
