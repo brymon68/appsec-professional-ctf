@@ -34,6 +34,24 @@ Resolve the vulnerabilities through implementing changes to the pom file and onc
 
 Also added mvn-dependency-check - https://jeremylong.github.io/DependencyCheck/dependency-check-maven/ to pom.xml to analyze dependencies and fail build on any vulnerabilites greater than or equal to 7. 
 
+```
+<plugin>
+              <groupId>org.owasp</groupId>
+              <artifactId>dependency-check-maven</artifactId>
+              <version>5.2.0</version>
+              <configuration>
+                  <failBuildOnCVSS>7</failBuildOnCVSS>
+              </configuration>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>check</goal>
+                      </goals>
+                  </execution>
+              </executions>
+            </plugin>
+```
+
 Output from tool on unmodified pom.xml:
 
 ```
