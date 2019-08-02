@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/static/js/main.093f2e1c.chunk.js",
+    "main.js.map": "/static/js/main.093f2e1c.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.d4b275d9.chunk.css": "/static/css/2.d4b275d9.chunk.css",
+    "static/js/2.086ae33c.chunk.js": "/static/js/2.086ae33c.chunk.js",
+    "static/js/2.086ae33c.chunk.js.map": "/static/js/2.086ae33c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9a98dd1ef2bf52b95d4266b9581447b3.js": "/precache-manifest.9a98dd1ef2bf52b95d4266b9581447b3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d4b275d9.chunk.css.map": "/static/css/2.d4b275d9.chunk.css.map",
+    "static/media/Bryce-Notes-Challenge1.md": "/static/media/Bryce-Notes-Challenge1.12931413.md",
+    "static/media/Bryce-Notes-Challenge2.md": "/static/media/Bryce-Notes-Challenge2.520eb753.md",
+    "static/media/Bryce-Notes-Challenge3.md": "/static/media/Bryce-Notes-Challenge3.3b79b394.md",
+    "static/media/Bryce-Notes-Challenge4.md": "/static/media/Bryce-Notes-Challenge4.390e27fc.md"
+  }
+}

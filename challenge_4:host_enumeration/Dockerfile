@@ -1,46 +1,18 @@
-FROM jpetazzo/dind
+FROM python:3-alpine
 
-ENV LC_ALL=C.UTF-8 
-ENV LANG=C.UTF-8
 
+RUN apk add --no-cache libressl-dev 
 
 RUN mkdir /app
 ENV DATADIR /app
+COPY src/ ${DATADIR}
+COPY src/data/final.json ${DATADIR}}
 
-RUN  apt-get update -qq && apt-get install -qqy \
-    software-properties-common \  
-    build-essential \ 
-    git
+ENV PORT 8080
+EXPOSE ${PORT}
+WORKDIR ${DATADIR}
 
+RUN pip install simple_http_server
 
-RUN apt-get update -qq && \
-    add-apt-repository ppa:jonathonf/python-3.6 && \
-    apt-get update && \
-    apt-get install -qqy python3-pip python3.6
-
-RUN cd $DATADIR
-RUN git clone https://github.com/Sandarmann/dr_robot.git
-
-RUN pip3 install pipenv simple_http_server
-RUN pip3 install simple_http_server
-
-CMD /bin/bash
-
-RUN cd dr_robot  && \
-    pipenv --python /usr/bin/python3 && \
-    pipenv sync && \
-    pipenv shell && \
-    pipenv run python drrobot.py gather overstock.com -sub
-#
-
-# RUN mkdir /app
-# ENV DATADIR /app
-# COPY src/index.html ${DATADIR}
-
-# ENV PORT 8080
-# EXPOSE ${PORT}
-# WORKDIR ${DATADIR}
-
-
-
-# CMD python -m http.server ${PORT}
+CMD python -m http.server ${PORT}
+#CMD python3 -m SimpleHTTPServer ${PORT}

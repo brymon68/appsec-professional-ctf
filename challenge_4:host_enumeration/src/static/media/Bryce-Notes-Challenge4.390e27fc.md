@@ -81,14 +81,6 @@ If I have spare time:
 1. I will create a webapp for viewing all 4 challenge results in MD format - **DONE**
 2. Dockerize dr_robot and report generation for easy deployment anywhere / testability by Overstock.com management and technical teams - **Updated** INCOMPLETE - Ran out of time. See Dockerfile-unfinished for progress. I probably need about another two hours but seems like pipenv was not playign nicely with my Docker-In-Docker container.
 
-## To Run
+At the very least, I if I am not able to finish bonus items, I will at least provide the below detailed report for how I generated the data and output of data.
 
-1. Install docker
-2. Install docker-compose
-3. From within challenge 4 directory, run:
-
-```
-sudo docker-compose up --build
-```
-
-4. Navigate to localhost:8081 in your browser to view MD and Table at end of Challenge 4 MD doc with certificate expiration information.
+## To Demo
