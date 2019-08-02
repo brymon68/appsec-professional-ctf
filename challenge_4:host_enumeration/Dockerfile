@@ -10,7 +10,8 @@ ENV DATADIR /app
 RUN apt-get update -qq && apt-get install -qqy \
     git \ 
     python3 \
-    python3-pip
+    python3-pip \
+    build-essential
 
 RUN cd $DATADIR
 RUN git clone https://github.com/Sandarmann/dr_robot.git
@@ -18,7 +19,8 @@ RUN git clone https://github.com/Sandarmann/dr_robot.git
 RUN pip3 install pipenv simple_http_server
 RUN pip3 install simple_http_server
 
-RUN cd dr_robot && \
+RUN cd dr_robot \
+    pipenv --python /usr/bin/python3\
     pipenv sync && \
     pipenv shell && \
     pipenv run python drrobot.py gather overstock.com -sub
