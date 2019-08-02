@@ -12,8 +12,8 @@ RUN apt-get update -qq && apt-get install -qqy \
 RUN cd $DATADIR
 RUN git clone https://github.com/Sandarmann/dr_robot.git
 
-RUN pip install pipenv simple_http_server
-RUN pip install simple_http_server
+RUN pip3 install pipenv simple_http_server
+RUN pip3 install simple_http_server
 
 RUN cd dr_robot && \
     pipenv sync && \
