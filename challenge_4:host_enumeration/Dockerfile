@@ -7,12 +7,16 @@ ENV LANG=C.UTF-8
 RUN mkdir /app
 ENV DATADIR /app
 
-RUN add-apt-repository ppa:jonathonf/python-3.6 && \
-    apt-get update -qq && apt-get install -qqy \
-    git \ 
+RUN  apt-get update -qq && apt-get install -qqy \
+    software-properties-common \  
+    build-essential \ 
+    git
+
+
+RUN apt-get update -qq && \
+    add-apt-repository ppa:jonathonf/python-3.6 && \
     python3.6 \
-    python3-pip \
-    build-essential
+    python3-pip 
 
 RUN cd $DATADIR
 RUN git clone https://github.com/Sandarmann/dr_robot.git
