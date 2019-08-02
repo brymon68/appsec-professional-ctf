@@ -21,12 +21,12 @@ RUN pip3 install simple_http_server
 
 CMD /bin/bash
 
-# RUN cd dr_robot \
-#     pipenv --python /usr/bin/python3\
-#     pipenv sync && \
-#     pipenv shell && \
-#     pipenv run python drrobot.py gather overstock.com -sub
-# #
+RUN cd dr_robot  && \
+    pipenv --python /usr/bin/python3 && \
+    pipenv sync && \
+    pipenv shell && \
+    pipenv run python drrobot.py gather overstock.com -sub
+#
 
 # RUN mkdir /app
 # ENV DATADIR /app
