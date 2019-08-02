@@ -10,7 +10,7 @@ RUN apt-get update -qq && apt-get install -qqy \
     python3-pip
 
 RUN cd $DATADIR
-RUN git clone git@github.com:Sandarmann/dr_robot.git
+RUN git clone https://github.com/Sandarmann/dr_robot.git
 
 RUN pip install pipenv simple_http_server
 RUN pip install simple_http_server
