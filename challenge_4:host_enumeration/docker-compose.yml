@@ -7,7 +7,3 @@ services:
       context: ./
     ports:
       - 8081:8080
-  python-docker:
-    build:
-      dockerfile: Dockerfile-dind-drrobt
-      context: ./
