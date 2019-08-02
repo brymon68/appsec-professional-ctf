@@ -1,5 +1,8 @@
 FROM jpetazzo/dind
 
+ENV LC_ALL=C.UTF-8 
+ENV LANG=C.UTF-8
+
 
 RUN mkdir /app
 ENV DATADIR /app
