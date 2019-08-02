@@ -7,9 +7,10 @@ ENV LANG=C.UTF-8
 RUN mkdir /app
 ENV DATADIR /app
 
-RUN apt-get update -qq && apt-get install -qqy \
+RUN add-apt-repository ppa:jonathonf/python-3.6 && \
+    apt-get update -qq && apt-get install -qqy \
     git \ 
-    python3 \
+    python3.6 \
     python3-pip \
     build-essential
 
