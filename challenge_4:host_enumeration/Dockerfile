@@ -15,8 +15,8 @@ RUN  apt-get update -qq && apt-get install -qqy \
 
 RUN apt-get update -qq && \
     add-apt-repository ppa:jonathonf/python-3.6 && \
-    python3.6 \
-    python3-pip 
+    apt-get update && \
+    apt-get install python3-pip python3.6
 
 RUN cd $DATADIR
 RUN git clone https://github.com/Sandarmann/dr_robot.git
